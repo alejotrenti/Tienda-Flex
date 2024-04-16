@@ -1,0 +1,28 @@
+---
+import Exclamation from "./svgs/others/Exclamation.astro";
+import Blink from "./svgs/others/Blink.astro";
+---
+
+<section class="bg-slate-300 ">
+    <section class="relative  top-0 object-contain lg:w-full min-h-xl lg:h-screen bg-bottom lg:bg-center bg-no-repeat  bg-contain lg:bg-[url('/man.png')] bg-blend-multiply">
+        <div class="px-4 lg:w-[600px] text-pretty mx-8 lg:ml-32 items-center text-center pt-24 pb-6 lg:pt-44">
+            <Exclamation class="size-10 lg:size-20 ml-auto  rotate-12" />
+            <h1 class="mb-2 lg:mt-5 text-5xl font-semibold tracking-tight leading-none text-black  lg:text-7xl font-playfair"> La revolución del confort </h1>
+            <span class=" text-lg font-base tracking-tight leading-none text-black  lg:text-2xl font-playfair ">que transformará tu rutina y postura. </span>
+            <p class="mt-10 font-normal tracking-tight leading-none text-black text-xl lg:text-2xl  "> Con una fusión perfecta de <strong>diseño contemporáneo y tecnología de vanguardia</strong>, cada pieza en nuestra tienda es una obra maestra de <strong>comodidad y funcionalidad</strong></p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-20 lg:mt-10">
+                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-900 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Compra YA
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+                <a href="./about/" class="inline-flex justify-center  items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-black rounded-lg border border-white hover:border-gray-400 hover:bg-gray-400 hover:text-white bg-white focus:ring-4 focus:ring-gray-400">
+                    Obtén mas información
+                </a> 
+            </div>
+            <Blink class="size-10 lg:size-20 mr-auto mt-3 rotate-12" />
+
+        </div>
+    </section>
+</section>

@@ -1,0 +1,49 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '@fontsource-variable/playfair-display';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Bienvenido a Flex Comfort Emporium, tu destino definitivo para encontrar el asiento perfecto que se adapte a tu estilo de vida activo y saludable. En Flex, nos dedicamos a ofrecerte una amplia gama de opciones en asientos innovadores y ergonómicos que van más allá de simplemente sentarse; es una experiencia de confort total." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		
+		<Header />
+		<Footer  />
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: light ;
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		margin:0;
+   		padding:0;
+   		height:100%;
+		
+	}
+	body{
+		justify-content: center;
+		position: relative;
+		margin: 0;
+		padding-bottom: 30rem;
+		min-height: 100%;
+		
+	}
+</style>

@@ -1,0 +1,64 @@
+
+<section>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <div class=" main-carousel lg:mx-52 py-10" data-flickity='{  "contain": true, "prevNextButtons": false, "autoPlay": 2000, "pageDots": false}'>
+        <div class="carousel-cell text-xl lg:text-4xl flex-col gap-y-7"> 
+            <h1>"I may not be smart enough to do everything, but I am dumb enough to try anything."</h1>
+            <h5 class=" text-black/40">-Geoff Johns</h5>
+        </div>
+        <div class="carousel-cell text-xl lg:text-4xl flex-col gap-y-7"> 
+            <h1>"I may not be smart enough to do everything, but I am dumb enough to try anything."</h1>
+            <h5 class=" text-black/40">-Geoff Johns</h5>
+        </div>
+        <div class="carousel-cell text-xl lg:text-4xl flex-col gap-y-7"> 
+            <h1>"I may not be smart enough to do everything, but I am dumb enough to try anything."</h1>
+            <h5 class=" text-black/40">-Geoff Johns</h5>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+        var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity( elem, {
+        // options
+        contain: true,
+        });
+    
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity( '.main-carousel', {
+        // options
+
+        });
+    </script>
+    
+    <style>
+        
+        .carousel {
+        background: #EEE;
+        }
+
+        .main-carousel {
+            border: 1px solid #7d7d7d;
+        }
+
+        .carousel-cell {
+        display: flex; 
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        height: 200px;
+        margin-right: 10px;
+        border-radius: 5px;
+        }
+
+        .flickity-button {
+        display: none;
+        }
+
+    </style>
+</section>
+
+

@@ -1,0 +1,17 @@
+---
+import Card from "./Card.astro";
+const { currentLocale } = Astro
+---
+
+<section class=" justify-center items-center border-t border-black py-10">
+    <div class="  text-center py-20">
+        <h1 class="  tracking-tight leading-none text-black text-6xl font-playfair">Nuestros mejores productos</h1>
+    </div>
+
+    <div class="grid lg:grid-cols-4 grid-cols-2   items-center gap-4  mx-auto lg:mx-52 py-10">
+        <Card class="hover:scale-110 transition p-3 rounded-t-lg" title="ErgoFlex Chair" image="https://purepng.com/public/uploads/large/purepng.com-chairchairfurnituresupported-by-legsseatdeck-chairseat-of-learning-1701527929244dmbip.png" />
+        <Card class="hover:scale-110 transition p-3 rounded-t-lg py-8" title="FlexiDesk Pro" image="https://purepng.com/public/uploads/large/office-desk-ban.png"/>
+        <Card class="hover:scale-110 transition p-3 rounded-t-lg py-14" title="ReceptionRelax Seat" image="https://purepng.com/public/uploads/large/arm-chair-kra.png"/>
+        <Card class="hover:scale-110 transition p-3 rounded-t-lg py-16" title="RelaxFlex Armchair" image="https://purepng.com/public/uploads/large/purepng.com-armchairarmchairarmchairsoffice-chairssofa-1701527920553thjnz.png"/>
+    </div>
+</section>
